@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Поиск по корпусу COVID-19</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+    .bg-1{
+        background-color: #FFEB00;
+    }
+    .bg-2 {
+        background-color: #FFFFF;
+    }
+    .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    p {
+	    padding-top: 10px;
+        font-size: 20px;
+    }
+    .margin {
+        margin-bottom: 45px;
+    }
+	</style>
+    </head>
+    <body>
+	<div class="container-fluid bg-1 text-center">
+    <h1 class="margin" align="center">Поиск по корпусу COVID-19</h1>
+    </div>
+	 <div class="container-fluid bg-2 text-center">
+    <form method="POST" action="/results">
+	<p><textarea type="text" name="query" placeholder="Текст для поиска" rows="2" cols="100"></textarea></p>
+    <p ><b> Метод:</b>  <input type="radio" name="method" value="tf-idf"> TF-IDF  &emsp;<input type="radio" name="method" value="bm25"> BM25 </p>
+     <input type="checkbox" value = "1" name="mycheckbox"> NER <br>
+	 <p><input type="submit" value="Искать"> </p>
+  </form>
+    </div>
+</body>
+</html>

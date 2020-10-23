@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Поиск по корпусу COVID-19</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+    .bg-1{
+        background-color: #FFEB00;
+    }
+    .bg-2 {
+        background-color: #FFFFF;
+    }
+    .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    p {
+	    padding-top: 10px;
+        font-size: 20px;
+    }
+    .margin {
+        margin-bottom: 45px;
+    }
+	.truncate p{
+	    margin: 0; 
+    -webkit-line-clamp: 2; 
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    overflow: hidden; /* 
+   }
+	</style>
+    </head>
+    <body>
+	<div class="container-fluid bg-1 text-center">
+    <h1 class="margin" align="center">Результаты поиска</h1>
+	<p>{{ time }} cекунд</p>
+    </div>
+	</div>
+	 <div class="container-fluid bg-2 text-center">
+	<p><textarea  disabled type="text" name="query" placeholder="{{ query }}" rows="2" cols="100"></textarea></p>
+	<div >
+	<ol>
+	 {% for quest,answer in docs %}
+            <li><p align="left" style='color:#200772' > {{ quest }} </p>
+			<p>{{ answer }}</p></li>
+        {% endfor %}
+	</ol>
+	<div class="truncate">
+    </div>
+</body>
+</html>
