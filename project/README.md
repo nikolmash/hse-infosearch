@@ -4,7 +4,7 @@
 
 *папка text representations* - в ней лежат матрицы tf-idf и файлы векторайзеров из sklearn
 
-также в эту папку нужно **загрузить** две матрицы bm25 (https://www.dropbox.com/s/nq8eql2dlb6tmyb/bm25.npy?dl=0)и bm25_ner (https://www.dropbox.com/s/bzzwk0a8t97gyy6/bm25_ner.npy?dl=0)
+также в эту папку нужно **загрузить** две матрицы bm25 (https://www.dropbox.com/s/ruornvunhwxuaub/bm25.npy?dl=0)и bm25_ner (https://www.dropbox.com/s/ew2tv6bfb8wg9ui/bm25_ner.npy?dl=0)
 
 
 
